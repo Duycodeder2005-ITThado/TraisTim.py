@@ -171,7 +171,7 @@ def main():
 	while True:
 		DISPLAYSURF.fill((0, 0, 0)) # Xoá nền
 		for event in pygame.event.get():
-			if event.type == QUIT or (event.type == KEYUP and event.key == K_ESCAPE):
+			if event.type == pygame.QUIT or (event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE):
 				pygame.quit()
 				sys.exit()
 		if time == TIME_CREAT_FW: # Tạo (những) viên đạn bay lên sau khoảng thời gian xác đinh
